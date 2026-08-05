@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Siempre 💙</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:linear-gradient(180deg,#0f172a,#1e3a8a,#0f172a);
+font-family:Arial,sans-serif;
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+
+.contenedor{
+max-width:800px;
+margin:auto;
+padding:50px 25px;
+}
+
+img{
+width:300px;
+max-width:90%;
+border-radius:20px;
+box-shadow:0 0 30px rgba(255,255,255,.3);
+margin:25px 0;
+}
+
+h1{
+font-size:42px;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+opacity:0;
+animation:aparecer 2s forwards;
+}
+
+p:nth-child(3){animation-delay:1s;}
+p:nth-child(4){animation-delay:4s;}
+p:nth-child(5){animation-delay:7s;}
+p:nth-child(6){animation-delay:10s;}
+p:nth-child(7){animation-delay:13s;}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.corazon{
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:subir 8s linear infinite;
+opacity:.8;
+}
+
+@keyframes subir{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>💙 Para Siempre 💙</h1>
+
+<img src="imagenes/foto8.jpg">
+
+<p>
+Si llegaste hasta aquí, gracias por leer cada palabra. Cada capítulo fue escrito pensando únicamente en ti.
+</p>
+
+<p>
+No soy perfecto, pero todos los días quiero aprender a amarte mejor, respetarte más y demostrarte con hechos cuánto significas para mí.
+</p>
+
+<p>
+Le doy gracias a Dios por tu vida, por tu sonrisa y por permitirme caminar a tu lado. Eres una bendición que nunca dejaré de valorar.
+</p>
+
+<p>
+Hoy celebramos tu cumpleaños, pero también celebramos todo lo que eres: una mujer fuerte, inteligente, valiente y con un corazón enorme.
+</p>
+
+<p style="font-size:30px;font-weight:bold;">
+Feliz cumpleaños, mi negrita hermosa. 💙
+<br><br>
+Te amo infinitamente.
+<br><br>
+Gracias por existir.
+</p>
+
+</div>
+
+<script>
+
+function crearCorazon(){
+
+const corazon=document.createElement("div");
+
+corazon.className="corazon";
+
+corazon.innerHTML="💙";
+
+corazon.style.left=Math.random()*100+"vw";
+
+corazon.style.fontSize=(20+Math.random()*30)+"px";
+
+corazon.style.animationDuration=(5+Math.random()*5)+"s";
+
+document.body.appendChild(corazon);
+
+setTimeout(()=>{
+corazon.remove();
+},9000);
+
+}
+
+setInterval(crearCorazon,300);
+
+</script>
+
+</body>
+</html>
