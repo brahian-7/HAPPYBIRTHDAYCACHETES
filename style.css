@@ -1,25 +1,30 @@
 body{
-    background: linear-gradient(#0d47a1,#42a5f5);
-    color:white;
-    font-family: Arial, sans-serif;
-    text-align:center;
     margin:0;
-    padding:40px;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0b3d91,#5dade2);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+
+.portada{
+    padding:30px;
 }
 
 h1{
-    font-size:50px;
+    font-size:55px;
 }
 
 p{
     font-size:22px;
-    max-width:700px;
-    margin:auto;
+    margin:20px 0;
 }
 
 button{
-    margin-top:30px;
-    padding:15px 35px;
+    padding:15px 40px;
     font-size:20px;
     border:none;
     border-radius:30px;
