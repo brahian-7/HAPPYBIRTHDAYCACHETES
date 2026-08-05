@@ -1,7 +1,8 @@
-const boton = document.querySelector("button");
+function iniciarCarta(){
 
-boton.addEventListener("click", function(){
+    let musica=document.getElementById("musica");
 
-    alert("Bienvenida mi amor 💙");
+    musica.play();
 
-});
+    alert("Bienvenida mi amor 💙\nEsta página fue creada únicamente para ti.");
+}
